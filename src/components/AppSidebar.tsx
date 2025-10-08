@@ -1,4 +1,4 @@
-import { MessageSquare, Library, Sparkles } from "lucide-react";
+import { MessageSquare, Library, Sparkles, Shield } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import {
   Sidebar,
@@ -61,6 +61,14 @@ export function AppSidebar() {
                   <NavLink to="/">
                     <MessageSquare className="w-4 h-4" />
                     {open && <span>AI Chat</span>}
+                  </NavLink>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild>
+                  <NavLink to="/threat-analysis">
+                    <Shield className="w-4 h-4" />
+                    {open && <span>Threat Analysis</span>}
                   </NavLink>
                 </SidebarMenuButton>
               </SidebarMenuItem>
