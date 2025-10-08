@@ -111,35 +111,6 @@ export function AppSidebar() {
           </>
         )}
 
-        {/* Upgrade Card */}
-        {open && (
-          <div className="mt-auto">
-            <div className="relative rounded-xl bg-gradient-primary p-4 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-glow opacity-50" />
-              <div className="relative z-10">
-                <div className="flex -space-x-2 mb-3">
-                  <Avatar className="w-8 h-8 border-2 border-white">
-                    <AvatarFallback>U1</AvatarFallback>
-                  </Avatar>
-                  <Avatar className="w-8 h-8 border-2 border-white">
-                    <AvatarFallback>U2</AvatarFallback>
-                  </Avatar>
-                  <Avatar className="w-8 h-8 border-2 border-white">
-                    <AvatarFallback>U3</AvatarFallback>
-                  </Avatar>
-                </div>
-                <h3 className="font-semibold text-white mb-1">Upgrade to Pro</h3>
-                <p className="text-xs text-white/80 mb-3">
-                  Unlock more power and features
-                </p>
-                <Button variant="secondary" size="sm" className="w-full bg-white text-primary hover:bg-white/90">
-                  <Sparkles className="w-3 h-3 mr-2" />
-                  Upgrade
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
       </SidebarContent>
     </Sidebar>
   );
